@@ -1,12 +1,12 @@
 "use client"
 
 import { useState } from "react"
-import Header from "./components/Header"
-import Hero from "./components/Hero"
-import AuthModal from "./components/AuthModal"
-import "./App.css"
+import Header from "../src/components/Header"
+import Hero from "../src/components/Hero"
+import AuthModal from "../src/components/AuthModal"
+import "../src/App.css"
 
-function App() {
+export default function Page() {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false)
   const [authMode, setAuthMode] = useState<"login" | "signup">("login")
 
@@ -28,5 +28,3 @@ function App() {
     </div>
   )
 }
-
-export default App
